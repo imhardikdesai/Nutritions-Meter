@@ -5,13 +5,21 @@ export default function FruitInput() {
     function showNames(letters) {
 
     }
-    async function showFruitNames() {
-        let apiData = await fetch('https://raw.githubusercontent.com/imhardikdesai/nutritions-meter/master/src/JSON/Fruit%20Nutritions.json')
-        let jsonData = await apiData.json()
-        let fruitNames = jsonData.map(fruit => fruit.name)
-        return fruitNames;
-    }
-    showFruitNames()
+
+    // async function showFruitNames() {
+    //     let apiData = await fetch('https://raw.githubusercontent.com/imhardikdesai/nutritions-meter/master/src/JSON/Fruit%20Nutritions.json')
+    //     let jsonData = await apiData.json()
+    //     let fruitNames = jsonData.map(fruit => fruit.name)
+    //     return fruitNames;
+    // }
+    // showFruitNames()
+    // function alpha() {
+    //     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    //     let arr = str.split("");
+    //     return arr;
+    // }
+    // console.log(alpha())
+
     return (
         <>
             <div className="container">
