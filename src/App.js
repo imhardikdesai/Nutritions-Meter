@@ -1,14 +1,25 @@
 import './App.css';
-import FruitInput from './Components/FruitInput';
+import Home from './Components/Home';
 import NavBar from './Components/NavBar';
-import Testonomial from './Components/Testonomial';
+import About from './Components/About';
+// import Charts from './Components/Charts';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Testonomial />
-      <FruitInput />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </>
   );
 }
