@@ -4,39 +4,49 @@ import Charts from './Charts.jsx'
 import './Home.css'
 import { GoGraph } from 'react-icons/go'
 const Home = () => {
-    const [fruit1, setFruit1] = useState('')
-    const [fruit2, setFruit2] = useState('')
+    const [fruit1, setFruit1] = useState([])
+    const [fruit2, setFruit2] = useState([])
     const [isShown, setIsShown] = useState(false);
+
+    const getFruitInfo = (fruitName) => {
+        let nutritions;
+        fruitData.forEach((key) => {
+            if (key.name === fruitName) {
+                nutritions = key.nutritions
+            }
+        })
+        return nutritions
+    }
 
     const setFruitHandler1 = (e) => {
         if (e.target.value === 'Select Fruit') {
-            setFruit1('')
+            setFruit1([])
             setIsShown(current => !current);
         } else {
-            setFruit1(e.target.value)
+            setFruit1([
+                ...fruit1,
+                e.target.value,
+                getFruitInfo(e.target.value)
+            ])
         }
     }
 
     const setFruitHandler2 = (e) => {
         if (e.target.value === 'Select Fruit') {
-            setFruit2('')
+            setFruit2([])
             setIsShown(current => !current);
         } else {
-            setFruit2(e.target.value)
+            setFruit2([
+                ...fruit2,
+                e.target.value,
+                getFruitInfo(e.target.value)
+            ])
         }
     }
 
     const handleClick = () => {
         setIsShown(current => !current);
     };
-
-    // function demo() {
-    //     fruitData.map((fruit) => {
-    //         if (fruit.name === fruit1) {
-    //             console.log(fruit.name)
-    //         }
-    //     })
-    // }
 
     return (
         <>
@@ -51,6 +61,7 @@ const Home = () => {
 
                 {/* form part  */}
                 <form className='d-flex flex-column align-items-center'>
+
                     <select onChange={setFruitHandler1} className="form-select form-select m-3" aria-label=".form-select-lg example">
                         <option defaultValue={'Select Fruit'}>Select Fruit</option>
                         {fruitData.map((fruit) => {
@@ -59,6 +70,7 @@ const Home = () => {
                             )
                         })}
                     </select>
+
                     <select onChange={setFruitHandler2} className="form-select form-select m-3" aria-label=".form-select-lg example">
                         <option defaultValue={'Select Fruit'}>Select Fruit</option>
                         {fruitData.map((fruit) => {

@@ -10,7 +10,7 @@ const fruit = [
             "carbohydrates": 11.4,
             "protein": 0.3,
             "fat": 0.4,
-            "calories": 52,
+            "calories": 5.2,
             "sugar": 10.3
         }
     },
@@ -25,7 +25,7 @@ const fruit = [
             "carbohydrates": 3.9,
             "protein": 0.5,
             "fat": 0.1,
-            "calories": 15,
+            "calories": 1.5,
             "sugar": 3.2
         }
     },
@@ -40,7 +40,7 @@ const fruit = [
             "carbohydrates": 22,
             "protein": 1,
             "fat": 0.2,
-            "calories": 96,
+            "calories": 9.6,
             "sugar": 17.2
         }
     },
@@ -55,7 +55,7 @@ const fruit = [
             "carbohydrates": 9,
             "protein": 1.3,
             "fat": 0.4,
-            "calories": 40,
+            "calories": 4.0,
             "sugar": 4.5
         }
     },
@@ -70,7 +70,7 @@ const fruit = [
             "carbohydrates": 5.5,
             "protein": 0,
             "fat": 0.4,
-            "calories": 29,
+            "calories": 2.9,
             "sugar": 5.4
         }
     },
@@ -85,7 +85,7 @@ const fruit = [
             "carbohydrates": 12,
             "protein": 1,
             "fat": 0.3,
-            "calories": 50,
+            "calories": 5.0,
             "sugar": 8
         }
     },
@@ -100,7 +100,7 @@ const fruit = [
             "carbohydrates": 27.1,
             "protein": 1.5,
             "fat": 5.3,
-            "calories": 147,
+            "calories": 14.7,
             "sugar": 6.75
         }
     },
@@ -115,7 +115,7 @@ const fruit = [
             "carbohydrates": 19,
             "protein": 0.8,
             "fat": 0.3,
-            "calories": 74,
+            "calories": 7.4,
             "sugar": 16
         }
     },
@@ -130,7 +130,7 @@ const fruit = [
             "carbohydrates": 10,
             "protein": 0.9,
             "fat": 0.6,
-            "calories": 44,
+            "calories": 4.4,
             "sugar": 0
         }
     },
@@ -145,7 +145,7 @@ const fruit = [
             "carbohydrates": 18.1,
             "protein": 0.72,
             "fat": 0.16,
-            "calories": 69,
+            "calories": 6.9,
             "sugar": 15.48
         }
     },
@@ -160,7 +160,7 @@ const fruit = [
             "carbohydrates": 3.1,
             "protein": 0.4,
             "fat": 0.1,
-            "calories": 21,
+            "calories": 2.1,
             "sugar": 6.4
         }
     },
@@ -175,7 +175,7 @@ const fruit = [
             "carbohydrates": 14,
             "protein": 2.6,
             "fat": 1,
-            "calories": 68,
+            "calories": 6.8,
             "sugar": 9
         }
     },
@@ -190,7 +190,7 @@ const fruit = [
             "carbohydrates": 15,
             "protein": 1.1,
             "fat": 0.5,
-            "calories": 61,
+            "calories": 6.1,
             "sugar": 9
         }
     },
@@ -205,7 +205,7 @@ const fruit = [
             "carbohydrates": 9,
             "protein": 1.1,
             "fat": 0.3,
-            "calories": 29,
+            "calories": 2.9,
             "sugar": 2.5
         }
     },
@@ -220,7 +220,7 @@ const fruit = [
             "carbohydrates": 8.4,
             "protein": 0.3,
             "fat": 0.1,
-            "calories": 25,
+            "calories": 2.5,
             "sugar": 1.7
         }
     },
@@ -235,7 +235,7 @@ const fruit = [
             "carbohydrates": 11.3,
             "protein": 0.75,
             "fat": 0.34,
-            "calories": 50,
+            "calories": 5.0,
             "sugar": 5.74
         }
     },
@@ -250,7 +250,7 @@ const fruit = [
             "carbohydrates": 17,
             "protein": 0.8,
             "fat": 0.44,
-            "calories": 66,
+            "calories": 6.6,
             "sugar": 15
         }
     },
@@ -265,7 +265,7 @@ const fruit = [
             "carbohydrates": 15,
             "protein": 0.82,
             "fat": 0.38,
-            "calories": 60,
+            "calories": 6.0,
             "sugar": 13.7
         }
     },
@@ -280,7 +280,7 @@ const fruit = [
             "carbohydrates": 8,
             "protein": 0,
             "fat": 0,
-            "calories": 34,
+            "calories": 3.4,
             "sugar": 8
         }
     },
@@ -295,7 +295,7 @@ const fruit = [
             "carbohydrates": 8.3,
             "protein": 1,
             "fat": 0.2,
-            "calories": 43,
+            "calories": 4.3,
             "sugar": 8.2
         }
     },
@@ -310,7 +310,7 @@ const fruit = [
             "carbohydrates": 11,
             "protein": 0,
             "fat": 0.4,
-            "calories": 43,
+            "calories": 4.3,
             "sugar": 1
         }
     },
@@ -325,7 +325,7 @@ const fruit = [
             "carbohydrates": 22.4,
             "protein": 2.2,
             "fat": 0.7,
-            "calories": 97,
+            "calories": 9.7,
             "sugar": 11.2
         }
     },
@@ -340,7 +340,7 @@ const fruit = [
             "carbohydrates": 15,
             "protein": 0.4,
             "fat": 0.1,
-            "calories": 57,
+            "calories": 5.7,
             "sugar": 10
         }
     },
@@ -355,7 +355,7 @@ const fruit = [
             "carbohydrates": 18,
             "protein": 0,
             "fat": 0,
-            "calories": 81,
+            "calories": 8.1,
             "sugar": 18
         }
     },
@@ -370,7 +370,7 @@ const fruit = [
             "carbohydrates": 13.12,
             "protein": 0.54,
             "fat": 0.12,
-            "calories": 50,
+            "calories": 5.0,
             "sugar": 9.85
         }
     },
@@ -385,7 +385,7 @@ const fruit = [
             "carbohydrates": 11.4,
             "protein": 0.7,
             "fat": 0.28,
-            "calories": 46,
+            "calories": 4.6,
             "sugar": 9.92
         }
     },
@@ -400,7 +400,7 @@ const fruit = [
             "carbohydrates": 12,
             "protein": 1.2,
             "fat": 0.7,
-            "calories": 53,
+            "calories": 5.3,
             "sugar": 4.4
         }
     },
@@ -415,7 +415,7 @@ const fruit = [
             "carbohydrates": 5.5,
             "protein": 0.8,
             "fat": 0.4,
-            "calories": 29,
+            "calories": 2.9,
             "sugar": 5.4
         }
     },
@@ -430,7 +430,7 @@ const fruit = [
             "carbohydrates": 3.9,
             "protein": 0.9,
             "fat": 0.2,
-            "calories": 74,
+            "calories": 7.4,
             "sugar": 2.6
         }
     },
@@ -442,11 +442,11 @@ const fruit = [
         "family": "Anacardiaceae",
         "order": "0",
         "nutritions": {
-            "carbohydrates": 0,
-            "protein": 0,
-            "fat": 0,
-            "calories": 0,
-            "sugar": 0
+            "carbohydrates": 5.87,
+            "protein": 1.01,
+            "fat": 0.31,
+            "calories": 6.5,
+            "sugar": 1.5
         }
     },
     {
@@ -460,7 +460,7 @@ const fruit = [
             "carbohydrates": 8,
             "protein": 0.6,
             "fat": 0.2,
-            "calories": 30,
+            "calories": 3.0,
             "sugar": 6
         }
     }

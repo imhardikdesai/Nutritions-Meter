@@ -4,6 +4,18 @@ import { Chart as ChartJS, registerables } from 'chart.js';
 ChartJS.register(...registerables);
 
 const Charts = (props) => {
+    const { fruit1, fruit2 } = props;
+    const label = ["carbohydrates", "protein", "fat", "calories", "sugar"]
+
+    // get neutrino data from given fruit array 
+    const getData = (fruit) => {
+        let data = [];
+        for (const key in fruit[1]) {
+            data.push(fruit[1][key])
+        }
+        return data;
+    }
+
     return (
         <>
             <Bar
@@ -12,17 +24,19 @@ const Charts = (props) => {
                 style={{ maxHeight: '500px' }}
                 datasetIdKey='id'
                 data={{
-                    labels: ['Jun', 'Jul', 'Aug'],
+                    labels: label,
                     datasets: [
                         {
                             id: 1,
-                            label: `${props.fruit1}`,
-                            data: [5, 6, 7],
+                            label: `${fruit1[0]}`,
+                            data: getData(fruit1),
+                            backgroundColor: '#30006C',
                         },
                         {
                             id: 2,
-                            label: `${props.fruit2}`,
-                            data: [3, 2, 1],
+                            label: `${fruit2[0]}`,
+                            data: getData(fruit2),
+                            backgroundColor: '#FC700C',
                         },
                     ],
                 }}
