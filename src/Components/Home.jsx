@@ -1,11 +1,12 @@
 import { React, useState } from 'react'
 import fruitData from '../JSON/fruitData.js'
 import Charts from './Charts.jsx'
-import { GoGraph } from 'react-icons/go'
+import { AiOutlineBarChart, AiOutlineLineChart } from 'react-icons/ai'
 const Home = () => {
     const [fruit1, setFruit1] = useState([])
     const [fruit2, setFruit2] = useState([])
     const [isShown, setIsShown] = useState(false);
+    const [mode, setMode] = useState('');
 
     const getFruitInfo = (fruitName) => {
         let nutritions;
@@ -14,7 +15,7 @@ const Home = () => {
                 nutritions = key.nutritions
             }
         })
-        return nutritions
+        return nutritions;
     }
 
     const setFruitHandler1 = (e) => {
@@ -43,8 +44,13 @@ const Home = () => {
         }
     }
 
-    const handleClick = () => {
-        setIsShown(current => !current);
+    const barHandleClick = () => {
+        setMode('bar')
+        setIsShown(true);
+    };
+    const lineHandleClick = () => {
+        setMode('line')
+        setIsShown(true);
     };
 
     return (
@@ -79,7 +85,10 @@ const Home = () => {
                         })}
                     </select>
                     <div className="m-2">
-                        <button disabled={(fruit1.length === 0 || fruit2.length === 0) ? true : false} onClick={handleClick} style={{ minWidth: '150px' }} className="btn btn-primary" type="button"><GoGraph />&nbsp; Compare</button>
+                        <button disabled={(fruit1.length === 0 || fruit2.length === 0) ? true : false} onClick={barHandleClick} style={{ minWidth: '150px' }} className="btn btn-primary mx-2" type="button"><AiOutlineBarChart />&nbsp; Bar Chart</button>
+
+                        <button disabled={(fruit1.length === 0 || fruit2.length === 0) ? true : false} onClick={lineHandleClick} style={{ minWidth: '150px' }} className="btn btn-primary mx-2" type="button"><AiOutlineLineChart />&nbsp; Line Chart</button>
+
                     </div>
                 </form>
 
@@ -87,7 +96,7 @@ const Home = () => {
                 {isShown &&
                     <div className='mx-1'>
                         <hr />
-                        <Charts fruit1={fruit1} fruit2={fruit2} />
+                        <Charts mode={mode} fruit1={fruit1} fruit2={fruit2} />
                     </div>
                 }
             </div>
