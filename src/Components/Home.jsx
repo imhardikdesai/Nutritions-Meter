@@ -1,7 +1,6 @@
 import { React, useState } from 'react'
 import fruitData from '../JSON/fruitData.js'
 import Charts from './Charts.jsx'
-import './Home.css'
 import { GoGraph } from 'react-icons/go'
 const Home = () => {
     const [fruit1, setFruit1] = useState([])
@@ -19,12 +18,12 @@ const Home = () => {
     }
 
     const setFruitHandler1 = (e) => {
+        setFruit1([])
         if (e.target.value === 'Select Fruit') {
             setFruit1([])
-            setIsShown(current => !current);
+            setIsShown(false);
         } else {
             setFruit1([
-                ...fruit1,
                 e.target.value,
                 getFruitInfo(e.target.value)
             ])
@@ -32,12 +31,12 @@ const Home = () => {
     }
 
     const setFruitHandler2 = (e) => {
+        setFruit2([])
         if (e.target.value === 'Select Fruit') {
             setFruit2([])
-            setIsShown(current => !current);
+            setIsShown(false);
         } else {
             setFruit2([
-                ...fruit2,
                 e.target.value,
                 getFruitInfo(e.target.value)
             ])
@@ -80,14 +79,17 @@ const Home = () => {
                         })}
                     </select>
                     <div className="m-2">
-                        <button disabled={(fruit1 && fruit2) ? false : true} onClick={handleClick} style={{ minWidth: '150px' }} className="btn btn-primary" type="button"><GoGraph />&nbsp; Compare</button>
+                        <button disabled={(fruit1.length === 0 || fruit2.length === 0) ? true : false} onClick={handleClick} style={{ minWidth: '150px' }} className="btn btn-primary" type="button"><GoGraph />&nbsp; Compare</button>
                     </div>
                 </form>
 
                 {/* chart part  */}
-                <div id="chartBox">
-                    {isShown && <Charts fruit1={fruit1} fruit2={fruit2} />}
-                </div>
+                {isShown &&
+                    <div className='mx-1'>
+                        <hr />
+                        <Charts fruit1={fruit1} fruit2={fruit2} />
+                    </div>
+                }
             </div>
         </>
     )

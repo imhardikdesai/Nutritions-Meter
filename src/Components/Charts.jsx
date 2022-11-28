@@ -38,7 +38,7 @@ const Charts = (props) => {
                             data: getData(fruit2),
                             backgroundColor: '#FC700C',
                         },
-                    ],
+                    ]
                 }}
             />
         </>
