@@ -1,0 +1,48 @@
+.fruitImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 16%;
+    margin: 10px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vsText {
+    color: #808082;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.fruit1-text {
+    color: #11345D;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fruit2-text {
+    color: #87144F;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 580px) {
+    #infoBox {
+        flex-direction: column !important;
+    }
+
+    .fruitImage {
+        height: 150px;
+        width: 150px;
+    }
+
+    #button-box{
+        margin: 10px 0px !important;
+    }
+}

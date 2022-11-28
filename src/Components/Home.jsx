@@ -2,6 +2,9 @@ import { React, useState } from 'react'
 import fruitData from '../JSON/fruitData.js'
 import Charts from './Charts.jsx'
 import { AiOutlineBarChart, AiOutlineLineChart } from 'react-icons/ai'
+// import demo1 from './../Assets/demo1.jpg'
+// import demo2 from './../Assets/demo2.jpg'
+import './Home.css';
 const Home = () => {
     const [fruit1, setFruit1] = useState([])
     const [fruit2, setFruit2] = useState([])
@@ -18,6 +21,16 @@ const Home = () => {
         return nutritions;
     }
 
+    const getFruitImage = (fruitName) => {
+        let imgUrl;
+        fruitData.forEach((key) => {
+            if (key.name === fruitName) {
+                imgUrl = key.imgUrl
+            }
+        })
+        return imgUrl;
+    }
+
     const setFruitHandler1 = (e) => {
         setFruit1([])
         if (e.target.value === 'Select Fruit') {
@@ -26,7 +39,8 @@ const Home = () => {
         } else {
             setFruit1([
                 e.target.value,
-                getFruitInfo(e.target.value)
+                getFruitInfo(e.target.value),
+                getFruitImage(e.target.value)
             ])
         }
     }
@@ -39,11 +53,11 @@ const Home = () => {
         } else {
             setFruit2([
                 e.target.value,
-                getFruitInfo(e.target.value)
+                getFruitInfo(e.target.value),
+                getFruitImage(e.target.value)
             ])
         }
     }
-
     const barHandleClick = () => {
         setMode('bar')
         setIsShown(true);
@@ -84,7 +98,7 @@ const Home = () => {
                             )
                         })}
                     </select>
-                    <div className="m-2">
+                    <div id='button-box' className="m-2">
                         <button disabled={(fruit1.length === 0 || fruit2.length === 0) ? true : false} onClick={barHandleClick} style={{ minWidth: '150px' }} className="btn btn-primary mx-2" type="button"><AiOutlineBarChart />&nbsp; Bar Chart</button>
 
                         <button disabled={(fruit1.length === 0 || fruit2.length === 0) ? true : false} onClick={lineHandleClick} style={{ minWidth: '150px' }} className="btn btn-primary mx-2" type="button"><AiOutlineLineChart />&nbsp; Line Chart</button>
@@ -94,8 +108,32 @@ const Home = () => {
 
                 {/* chart part  */}
                 {isShown &&
-                    <div className='mx-1'>
+                    <div>
                         <hr />
+                        <div id='infoBox' className="d-flex flex-row justify-content-between align-items-center flex-lg-row">
+                            <div className="img-box">
+                                <h3 className='fruit1-text'>{fruit1[0]}</h3>
+                                <img src={fruit1[2]} className="fruitImage" alt="First Fruit" />
+                            </div>
+                            <div className="text-center">
+                                <h2 className='vsText'>VS.</h2>
+                            </div>
+                            <div className="img-box">
+                                <h3 className='fruit2-text'>{fruit2[0]}</h3>
+                                <img src={fruit2[2]} className="fruitImage" alt="Second Fruit" />
+                            </div>
+                            {/* <div className="img-box">
+                                <h3 className='fruit1-text'>Banana</h3>
+                                <img src={demo1} className="fruitImage" alt="First Fruit" />
+                            </div>
+                            <div className="text-center">
+                                <h2 className='vsText'>VS.</h2>
+                            </div>
+                            <div className="img-box">
+                                <h3 className='fruit2-text'>Grapes</h3>
+                                <img src={demo2} className="fruitImage" alt="Second Fruit" />
+                            </div> */}
+                        </div>
                         <Charts mode={mode} fruit1={fruit1} fruit2={fruit2} />
                     </div>
                 }
