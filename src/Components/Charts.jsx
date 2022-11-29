@@ -29,14 +29,14 @@ const Charts = (props) => {
                                 id: 1,
                                 label: `${fruit1[0]}`,
                                 data: getData(fruit1),
-                                backgroundColor: "rgba(223, 77, 152, 0.9)",
+                                backgroundColor: "rgb(35, 197, 82,0.6)",
                                 borderColor: "#363636"
                             },
                             {
                                 id: 2,
                                 label: `${fruit2[0]}`,
                                 data: getData(fruit2),
-                                backgroundColor: "rgba(117, 109, 225, 0.9)",
+                                backgroundColor: "rgb(248, 79, 49,0.8)",
                                 borderColor: "#363636"
                             },
                         ]
@@ -59,7 +59,7 @@ const Charts = (props) => {
                                 label: `${fruit1[0]}`,
                                 data: getData(fruit1),
                                 fill: "start",
-                                backgroundColor: "rgba(223, 77, 152, 0.63)",
+                                backgroundColor: "rgb(35, 197, 82,0.6)",
                                 // backgroundColor: (context) => {
                                 //     const ctx = context.chart.ctx;
                                 //     const gradient = ctx.createLinearGradient(100, 50, 150, 100);
@@ -74,7 +74,7 @@ const Charts = (props) => {
                                 label: `${fruit2[0]}`,
                                 data: getData(fruit2),
                                 fill: 'start',
-                                backgroundColor: "rgba(117, 109, 225, 0.63)",
+                                backgroundColor: "rgb(248, 79, 49,0.8)",
                                 borderColor: "#363636"
                             },
                         ]

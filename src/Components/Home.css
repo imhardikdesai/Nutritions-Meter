@@ -32,6 +32,28 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.semi-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fruit1-semi-text {
+    margin: 3px;
+    color: #11345D;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fruit2-semi-text {
+    margin: 3px;
+    color: #87144F;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @media only screen and (max-width: 580px) {
     #infoBox {
         flex-direction: column !important;
@@ -42,7 +64,7 @@
         width: 150px;
     }
 
-    #button-box{
+    #button-box {
         margin: 10px 0px !important;
     }
 }

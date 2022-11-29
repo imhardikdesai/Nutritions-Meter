@@ -8,29 +8,18 @@ import './Home.css';
 const Home = () => {
     const [fruit1, setFruit1] = useState([])
     const [fruit2, setFruit2] = useState([])
-    const [isShown, setIsShown] = useState(false);
+    const [isShown, setIsShown] = useState(true);
     const [mode, setMode] = useState('');
 
-    const getFruitInfo = (fruitName) => {
-        let nutritions;
+    const getFruitInfo = (fruitName, getValue) => {
+        let newGetValue;
         fruitData.forEach((key) => {
             if (key.name === fruitName) {
-                nutritions = key.nutritions
+                newGetValue = key[getValue]
             }
         })
-        return nutritions;
+        return newGetValue;
     }
-
-    const getFruitImage = (fruitName) => {
-        let imgUrl;
-        fruitData.forEach((key) => {
-            if (key.name === fruitName) {
-                imgUrl = key.imgUrl
-            }
-        })
-        return imgUrl;
-    }
-
     const setFruitHandler1 = (e) => {
         setFruit1([])
         if (e.target.value === 'Select Fruit') {
@@ -39,8 +28,11 @@ const Home = () => {
         } else {
             setFruit1([
                 e.target.value,
-                getFruitInfo(e.target.value),
-                getFruitImage(e.target.value)
+                getFruitInfo(e.target.value, "nutritions"),
+                getFruitInfo(e.target.value, "imgUrl"),
+                getFruitInfo(e.target.value, "genus"),
+                getFruitInfo(e.target.value, "family"),
+                getFruitInfo(e.target.value, "order")
             ])
         }
     }
@@ -53,8 +45,11 @@ const Home = () => {
         } else {
             setFruit2([
                 e.target.value,
-                getFruitInfo(e.target.value),
-                getFruitImage(e.target.value)
+                getFruitInfo(e.target.value, "nutritions"),
+                getFruitInfo(e.target.value, "imgUrl"),
+                getFruitInfo(e.target.value, "genus"),
+                getFruitInfo(e.target.value, "family"),
+                getFruitInfo(e.target.value, "order")
             ])
         }
     }
@@ -113,25 +108,53 @@ const Home = () => {
                         <div id='infoBox' className="d-flex flex-row justify-content-between align-items-center flex-lg-row">
                             <div className="img-box">
                                 <h3 className='fruit1-text'>{fruit1[0]}</h3>
-                                <img src={fruit1[2]} className="fruitImage" alt="First Fruit" />
+                                <div className="semi-box">
+                                    <div className="fruit1-semi-text">
+                                        <p>Genus : {fruit1[3]}</p>
+                                        <p>Family : {fruit1[4]}</p>
+                                        <p>Order : {fruit1[5]}</p>
+                                    </div>
+                                    <img src={fruit1[2]} className="fruitImage" alt="First Fruit" />
+                                </div>
                             </div>
                             <div className="text-center">
                                 <h2 className='vsText'>VS.</h2>
                             </div>
                             <div className="img-box">
                                 <h3 className='fruit2-text'>{fruit2[0]}</h3>
-                                <img src={fruit2[2]} className="fruitImage" alt="Second Fruit" />
+                                <div className="semi-box">
+                                    <div className="fruit1-semi-text">
+                                        <p>Genus : {fruit2[3]}</p>
+                                        <p>Family : {fruit2[4]}</p>
+                                        <p>Order : {fruit2[5]}</p>
+                                    </div>
+                                    <img src={fruit2[2]} className="fruitImage" alt="First Fruit" />
+                                </div>
                             </div>
                             {/* <div className="img-box">
                                 <h3 className='fruit1-text'>Banana</h3>
-                                <img src={demo1} className="fruitImage" alt="First Fruit" />
+                                <div className="semi-box">
+                                    <div className="fruit1-semi-text">
+                                        <p>Genus : Malus</p>
+                                        <p>Family : Rosaceae</p>
+                                        <p>Order : Rosales</p>
+                                    </div>
+                                    <img src={demo1} className="fruitImage" alt="First Fruit" />
+                                </div>
                             </div>
                             <div className="text-center">
                                 <h2 className='vsText'>VS.</h2>
                             </div>
                             <div className="img-box">
                                 <h3 className='fruit2-text'>Grapes</h3>
+                                <div className="semi-box">
+                                    <div className="fruit2-semi-text">
+                                        <p>Genus : Malus</p>
+                                        <p>Family : Rosaceae</p>
+                                        <p>Order : Rosales</p>
+                                    </div>
                                 <img src={demo2} className="fruitImage" alt="Second Fruit" />
+                                </div>
                             </div> */}
                         </div>
                         <Charts mode={mode} fruit1={fruit1} fruit2={fruit2} />
