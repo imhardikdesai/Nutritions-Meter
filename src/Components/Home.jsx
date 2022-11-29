@@ -8,7 +8,7 @@ import './Home.css';
 const Home = () => {
     const [fruit1, setFruit1] = useState([])
     const [fruit2, setFruit2] = useState([])
-    const [isShown, setIsShown] = useState(true);
+    const [isShown, setIsShown] = useState(false);
     const [mode, setMode] = useState('');
 
     const getFruitInfo = (fruitName, getValue) => {
