@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+<h1 align="center">
+       ✨  Nutritions Meter  ✨
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![Badge](https://img.shields.io/badge/Tech_Stack-HTML-orange) ![Badge](https://img.shields.io/badge/CSS-blue) ![Badge](https://img.shields.io/badge/React_Js-cyan)
+ ![Badge](https://img.shields.io/badge/-Java_Script-yellow) ![Badge](https://img.shields.io/badge/Version-1.0-green) 
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<h3 align="center">
+          Live Project :https://nutritions-meter.netlify.app/
+</h3>
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack : <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/react%20-%2314354C.svg?&style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img src="https://img.shields.io/badge/Chart_JS-6066C7?style=for-the-badge&logo=chartjs&logoColor=white"/> 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+- **Frontend:** HTML,CSS,React Js, Java Script, Bootstrap, Chart JS 
+- **Version Control:** Git and GitHub
+- **Hosting:** Netlify
+- **Code Editor and tools**: VS Code
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ <br />
 
-### `npm run build`
+   <p align="center">✨ Welcome to Quiz Web App ✨ <br /></p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Table of Contents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Overview
+    - UI of Website
+    - Contribution Guideline
 
-### `npm run eject`
+ <br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Overview 🔨
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Nutritions Meter is a website would compare the nutrition data of two fruit varieties and display the comparison in different types of charts like bar graphs, and line graphs. The website would also include detailed nutritional information regarding the two fruits and provide users with the option to view the comparison in different formats.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  <br />
 
-## Learn More
+## UI of the Website
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/87645745/206849580-d9926934-12ff-4396-a508-db4669c4ac99.png)
+### Home Page 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://user-images.githubusercontent.com/87645745/206849599-5122e794-8912-43bb-9190-265a8991b04d.png)
+### Fruits Selection
 
-### Code Splitting
+![image](https://user-images.githubusercontent.com/87645745/206849635-87fe422f-f386-4b81-9a6c-cfa7be5111bc.png)
+### Bar Chart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://user-images.githubusercontent.com/87645745/206849650-04a7ff89-8f60-45ec-9663-5364c039112c.png)
+### Line Chart 
 
-### Analyzing the Bundle Size
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Setup Steps
 
-### Making a Progressive Web App
+- Go to directory
+```
+$ cd Nutritions-Meter
+```
+- Install Dependency 
+```
+npm install
+```
+- Start LocalHost Server
+```
+npm run start
+```
+  <br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contribution Guidelines 🏗
 
-### Advanced Configuration
+ To start contributing, follow the below guidelines:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**1.** Fork [this](https://github.com/imhardikdesai/Nutritions-Meter) repository.
 
-### Deployment
+**2.** Clone your forked copy of the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+git clone https://github.com/imhardikdesai/Nutritions-Meter.git
+```
 
-### `npm run build` fails to minify
+**3.** Navigate to the project directory :file_folder: .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+cd Nutritions-Meter
+```
+
+**4.** Add a reference(remote) to the original repository.
+
+```
+git remote add upstream Quiz-App.git
+```
+
+**5.** Check the remotes for this repository.
+
+```
+git remote -v
+```
+
+**6.** Create a new branch.
+
+```
+git checkout -b <your_branch_name>
+```
+
+**7.** Perfom your desired changes to the code base.
+
+**8.** Track your changes:heavy_check_mark: .
+
+```
+git add .
+```
+
+**9.** Commit your changes .
+
+```
+git commit -m "Relevant message"
+```
+
+**10.** Push the committed changes in your feature branch to your remote repo.
+
+```
+git push -u origin <your_branch_name>
+```
+
+**11.** To create a pull request, click on `compare and pull requests`.
+
+**12.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+
+**13.** Click on `Create Pull Request`.
+
+**14** You did it! 🥳 Wait for your submission to be accepted and your PR to be merged.
+
+<br />
