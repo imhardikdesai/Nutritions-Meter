@@ -1,0 +1,12 @@
+.nav-link.active{
+    color:rgb(245, 132, 2,0.8)!important;
+    font-family: 'Autour One';
+}
+
+.nav-link{
+    color:rgb(245, 132, 2,0.8)!important; 
+    font-family: 'Autour One';
+}
+.navbar-brand{
+    font-family: 'Autour One';
+}

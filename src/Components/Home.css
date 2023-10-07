@@ -1,10 +1,18 @@
-.fruitImage {
+.fruitImage1 {
     height: 200px;
     width: 200px;
     border-radius: 16%;
     margin: 10px;
+    border: 5px solid rgb(245, 132, 2,0.8);
 }
 
+.fruitImage2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 16%;
+    margin: 10px;
+    border: 5px solid rgb(13, 79, 31);
+}
 .img-box {
     display: flex;
     justify-content: center;
@@ -13,23 +21,25 @@
 }
 
 .vsText {
-    color: #808082;
+    color: #000000;
     font-size: 2rem;
     font-weight: bolder;
 }
 
 .fruit1-text {
-    color: #11345D;
+    color: #000000;
     font-size: 2.5rem;
     font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Autour One';
 }
 
 .fruit2-text {
-    color: #87144F;
+    color: #000000;
     font-size: 2.5rem;
     font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Autour One';
 }
 
 .semi-box {
@@ -40,18 +50,28 @@
 
 .fruit1-semi-text {
     margin: 3px;
-    color: #11345D;
+    color: #0b0b0b;
     font-size: 1rem;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Autour One';
 }
 
 .fruit2-semi-text {
     margin: 3px;
-    color: #87144F;
+    color: #0b0a0b;
     font-size: 1rem;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Autour One';
+}
+p.text-muted{
+    color:rgb(13, 79, 31)!important;
+    font-family: 'Autour One';
+}
+
+.title{
+    font-family: 'Autour One';
 }
 
 @media only screen and (max-width: 580px) {
@@ -62,6 +82,7 @@
     .fruitImage {
         height: 150px;
         width: 150px;
+        
     }
 
     #button-box {
