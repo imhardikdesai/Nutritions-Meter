@@ -67,7 +67,7 @@ const Home = () => {
             <div className="container my-4">
                 {/* header text  */}
                 <div className=" text-center">
-                    <h1 className="title">Compare Fruits</h1>
+                    <h1 className="title">COMPARE FRUITS</h1>
                     <p className="text-muted">
                         Select two fruits to compare Nutritional values
                     </p>
@@ -114,7 +114,7 @@ const Home = () => {
                                         <p>Family : {fruit1[4]}</p>
                                         <p>Order : {fruit1[5]}</p>
                                     </div>
-                                    <img src={fruit1[2]} className="fruitImage" alt="First Fruit" />
+                                    <img src={fruit1[2]} className="fruitImage1" alt="First Fruit" />
                                 </div>
                             </div>
                             <div className="text-center">
@@ -128,7 +128,7 @@ const Home = () => {
                                         <p>Family : {fruit2[4]}</p>
                                         <p>Order : {fruit2[5]}</p>
                                     </div>
-                                    <img src={fruit2[2]} className="fruitImage" alt="First Fruit" />
+                                    <img src={fruit2[2]} className="fruitImage2" alt="First Fruit" />
                                 </div>
                             </div>
                             {/* <div className="img-box">
