@@ -3,6 +3,8 @@
     width: 200px;
     border-radius: 16%;
     margin: 10px;
+    object-fit: fill;
+    object-position: center;
 }
 
 .img-box {
@@ -10,8 +12,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
- object-fit: cover;
- object-position: center;
+
 }
 
 .vsText {
