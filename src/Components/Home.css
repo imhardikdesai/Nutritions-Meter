@@ -3,7 +3,7 @@
     width: 200px;
     border-radius: 16%;
     margin: 10px;
-    object-fit: fill;
+    object-fit: contain;
     object-position: center;
 }
 
