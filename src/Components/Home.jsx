@@ -67,8 +67,8 @@ const Home = () => {
             <div className="container my-4">
                 {/* header text  */}
                 <div className=" text-center">
-                    <h1 className="title">Compare Fruits</h1>
-                    <p className="text-muted">
+                    <h1 className="title heading">Compare Fruits</h1>
+                    <p className="text-black heading2">
                         Select two fruits to compare Nutritional values
                     </p>
                 </div>
