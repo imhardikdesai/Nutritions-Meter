@@ -1,7 +1,5 @@
 body{
-  background-image: url(./Assets/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+background-color: rgb(218, 194, 163);
 }
 .bar{
   background-color: rgb(94, 73, 33);
